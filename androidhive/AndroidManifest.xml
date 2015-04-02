@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidhive"
+    android:versionCode="1"
+    android:versionName="1.0" >
+ 
+    <uses-sdk android:minSdkVersion="8" />
+ 
+    <application
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+ 
+        <activity
+            android:name=".MainScreenActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+ 
+        <!-- All Posts Activity -->
+        <activity
+            android:name=".AllPostsActivity"
+            android:label="All Posts" >
+        </activity>
+ 
+        <!-- Add Post Activity -->
+        <activity
+            android:name=".NewPostActivity"
+            android:label="Add New Post" >
+        </activity>
+ 
+        <!-- Edit Post Activity -->
+        <activity
+            android:name=".EditPostActivity"
+            android:label="Edit Post" >
+        </activity>
+    </application>
+ 
+    <!--  Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+ 
+</manifest>
